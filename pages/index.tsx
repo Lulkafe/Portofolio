@@ -2,6 +2,7 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.sass'
+import hd_style from '../styles/Header.module.sass'
 
 const Home: NextPage = () => {
   return (
@@ -15,18 +16,18 @@ const Home: NextPage = () => {
 
 const Header = () => {
   return (
-    <nav className={styles.nav}>
-      <span className={styles['nav__logo-wrapper']}>
+    <nav className={hd_style.nav}>
+      <span className={hd_style.logo_wrapper}>
         <Image alt='site-logo' 
           src='/site-logo.png'
           height={70} 
           width={70}
           />
       </span>
-      <span className={styles.test_this}>
-        <a>About</a>
-        <a>Projects</a>
-        <a>Contact</a>
+      <span className={hd_style.menu_wrapper}>
+        <a className={hd_style.menu_item} href='#'>About</a>
+        <a className={hd_style.menu_item} href='#'>Projects</a>
+        <a className={hd_style.menu_item} href='#'>Contact</a>
       </span>
     </nav>
   )  
