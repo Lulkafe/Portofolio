@@ -1,11 +1,14 @@
+@keyframes highlight
+    from
+        border-bottom: 3px solid transparent
+    to
+        border-bottom: 3px solid blue
+
 .nav
     height: 55px
     width: 100%
-    position: absolute
     display: flex
     justify-content: space-between
-    z-index: 255 //Position of Welcome message part is absolute
-                 //so, this index is to make nav-items clickable
 
 .menu_item
     padding: 5px 5px 7px 5px
@@ -14,6 +17,7 @@
 
 .menu_item:hover
     border-bottom: 3px solid blue
+    animation: highlight 1s
 
 .menu_wrapper
     display: flex
@@ -23,4 +27,14 @@
 
 .logo_wrapper
     display: inline-block
+    width: 50px
+    max-height: 50px
     padding: 8px 0 0 8px
+    cursor: pointer
+
+
+/****** FOR SMALL MOBILE DEVICES *******/
+@media only screen and (max-width: 750px)
+    .menu_wrapper
+        display: none
+    

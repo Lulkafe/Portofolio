@@ -15,11 +15,15 @@ interface ImageInfo {
 const Home: NextPage = () => {
   return (
     <>
-      <Header/>
-      <WelcomeSection/>
-      <AboutMeSection/>
-      <ProjectSection/>
-      <Footer/>
+        <Head>
+          <meta name='viewport' content='width=device-width, initial-scale=1'></meta>
+        </Head>
+        <Header/>
+        <WelcomeSection/>
+        <AboutMeSection/>
+        <ProjectSection/>
+        <Footer/>
+    
     </>
   )
 }
@@ -31,8 +35,8 @@ const Header = () => {
       <span className={hd_style.logo_wrapper}>
         <Image alt='site-logo' 
           src='/site-logo.png'
-          height={70} 
-          width={70}
+          height={50} 
+          width={50}
           />
       </span>
       <span className={hd_style.menu_wrapper}>

@@ -1,39 +1,53 @@
 @keyframes fade-in-msg
     from
-        bottom: 45%
+        bottom: 40%
         opacity: 0
     to 
         bottom: 52%
-        opacity: 1 
-    
-@keyframes fade-in-img
-    from
-        top: 9%
-        opacity: 0
-    to 
-        top: 2%
         opacity: 1 
 
 .greeting
     position: absolute
     font-size: 52px
-    left: 60%
+    left: 59%
     bottom: 52%
-    background: rgba(255,255,255,.40)
+    background: rgba(255,255,255,.44)
     backdrop-filter: blur(2px)
-    -webkit-box-shadow: 5px 1px 46px 25px rgba(255,255,255,0.5) 
-    box-shadow: 5px 1px 46px 25px rgba(255,255,255,0.5)
+    -webkit-box-shadow: 5px 1px 46px 25px rgba(255,255,255,0.4) 
+    box-shadow: 5px 1px 46px 25px rgba(255,255,255,0.4)
     border-radius: 16px
     padding: 1rem
     animation: fade-in-msg 1.5s
+    margin-right: 10px
 
 .image_wrapper 
-    position: absolute
-    top: 2%
-    right: 38%
-    animation: fade-in-img 1.5s
+    position: relative
+    bottom: 20px
    
-
 .section_wrapper
     position: relative
-    height: 100vh
+    padding-right: 10px
+    padding-bottom: 30px
+
+/**** FOR SMALL DEVICES ****/
+@media only screen and (max-width: 1000px)
+    .greeting
+        left: 25%
+
+@media only screen and (max-width: 630px)
+    .greeting
+        font-size: 38px
+    
+@media only screen and (max-width: 465px)
+    .greeting
+        font-size: 33px
+
+@media only screen and (max-width: 381px)
+    .greeting
+        left: 15%
+        font-size: 29px
+
+@media only screen and (max-width: 321px)
+    .greeting
+        left: 10%
+        font-size: 29px
