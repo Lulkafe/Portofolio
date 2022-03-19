@@ -1,7 +1,7 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
-import styles from '../styles/Home.module.sass'
+import wc_style from '../styles/Welcome.module.sass'
 import hd_style from '../styles/Header.module.sass'
 import am_style from '../styles/About.module.sass'
 
@@ -46,15 +46,17 @@ const Header = () => {
 
 const WelcomeSection = () => {
   return (
-    <div className={ styles['welcome-sec__wrapper']}>
-      <div className={ styles['welcome-sec__image-wrapper']}>
-        <Image alt='tool image'
-          src='/tool.png'
-          height={844}
-          width={832}
-          />
+    <div className={ wc_style.section_wrapper}>
+      <div className= { wc_style.wrapper_for_anime}>
+        <div className={ wc_style.image_wrapper}>
+          <Image alt='tool image'
+            src='/tool.png'
+            height={844}
+            width={832}
+            />
+        </div>
+        <p className={ wc_style.greeting}>Hello, I&apos;m Seimei.<br/>Software Engineer.</p>
       </div>
-        <p className={ styles['welcome-sec__greeting']}>Hello, I&apos;m Seimei.<br/>Software Engineer.</p>
     </div>
   )
 }

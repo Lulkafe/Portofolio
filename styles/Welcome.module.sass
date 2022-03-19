@@ -1,4 +1,20 @@
-.welcome-sec__greeting
+@keyframes fade-in-msg
+    from
+        bottom: 45%
+        opacity: 0
+    to 
+        bottom: 52%
+        opacity: 1 
+    
+@keyframes fade-in-img
+    from
+        top: 9%
+        opacity: 0
+    to 
+        top: 2%
+        opacity: 1 
+
+.greeting
     position: absolute
     font-size: 52px
     left: 60%
@@ -9,13 +25,15 @@
     box-shadow: 5px 1px 46px 25px rgba(255,255,255,0.5)
     border-radius: 16px
     padding: 1rem
-    
+    animation: fade-in-msg 1.5s
 
-.welcome-sec__image-wrapper 
+.image_wrapper 
     position: absolute
     top: 2%
     right: 38%
+    animation: fade-in-img 1.5s
+   
 
-.welcome-sec__wrapper
+.section_wrapper
     position: relative
     height: 100vh
