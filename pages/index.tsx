@@ -67,7 +67,7 @@ const WelcomeSection = () => {
 
 const AboutMeSection = () => {
   return (
-    <div className={am_style['aboutMe-sec__wrapper']}>
+    <div className={am_style.section_wrapper}>
       <section>
          <div className={am_style.skewed} />
       </section>
