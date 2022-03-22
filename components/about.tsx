@@ -8,7 +8,9 @@ export default function AboutMeSection () {
       <section>
          <div className={style.skewed} />
       </section>
-      <h1 className={style.header}>ABOUT ME</h1>
+      <div className={style.content_wrapper}>
+          <h1 className={style.header}>ABOUT ME</h1>
+      </div>
     </div>
   )
 }

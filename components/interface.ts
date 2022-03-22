@@ -13,7 +13,7 @@ export interface ProjectInfo {
     keywords: string []
   },
   url: {
-    website: string,
+    website?: string,
     github?: string
   }
 }

@@ -1,10 +1,10 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import Header from '../component/header'
-import WelcomeSection from '../component/welcome'
-import AboutSection from '../component/about'
-import ProjectSection from '../component/project'
-import Footer from '../component/footer'
+import Header from '../components/header'
+import WelcomeSection from '../components/welcome'
+import AboutSection from '../components/about'
+import ProjectSection from '../components/project'
+import Footer from '../components/footer'
 
 const Home: NextPage = () => {
   return (
