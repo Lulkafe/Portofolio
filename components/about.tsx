@@ -4,7 +4,7 @@ import { ImageInfo } from './interface';
 
 export default function AboutMeSection () {
   return (
-    <div className={style.section_wrapper}>
+    <div className={style.section_wrapper} id='about'>
       <section>
          <div className={style.skewed} />
       </section>
@@ -15,7 +15,7 @@ export default function AboutMeSection () {
   )
 }
 
-const AboutItemContainer = (props: any) => {
+const AboutItem = (props: any) => {
   
   const header: string = props.header || '';
   const img: ImageInfo = props.imgInfo;

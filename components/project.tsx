@@ -4,7 +4,7 @@ import { ProjectInfo } from './interface'
 export default function ProjectSection () {
 
   return (
-    <div className={style.section_wrapper}>
+    <div className={style.section_wrapper} id='project'>
       <h1 className={style.header}>Projects</h1>
       <div className={style.content_wrapper}>
         {

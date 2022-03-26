@@ -6,11 +6,20 @@
         bottom: 52%
         opacity: 1 
 
+@keyframes fade-in-img
+    from
+        bottom: -30px
+        opacity: 0
+    to 
+        bottom: 20px
+        opacity: 1 
+
 .greeting
     position: absolute
     font-size: 52px
     left: 59%
     bottom: 52%
+    font-family: 'Caveat', sans-serif
     background: rgba(255,255,255,.44)
     backdrop-filter: blur(2px)
     -webkit-box-shadow: 5px 1px 46px 25px rgba(255,255,255,0.4) 
@@ -23,6 +32,7 @@
 .image_wrapper 
     position: relative
     bottom: 20px
+    animation: fade-in-img 1.5s
    
 .section_wrapper
     position: relative
@@ -34,7 +44,11 @@
 /**** FOR SMALL DEVICES ****/
 @media only screen and (max-width: 1000px)
     .greeting
-        left: 25%
+        left: 50%
+        bottom: 20%
+        transform: translateX(-50%)
+        width: 80%
+        text-align: right
 
 @media only screen and (max-width: 630px)
     .greeting
@@ -47,10 +61,8 @@
 
 @media only screen and (max-width: 381px)
     .greeting
-        left: 15%
         font-size: 29px
 
 @media only screen and (max-width: 321px)
     .greeting
-        left: 10%
         font-size: 29px

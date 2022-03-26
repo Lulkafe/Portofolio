@@ -12,9 +12,9 @@ export default function Header () {
           />
       </span>
       <span className={style.menu_wrapper}>
-        <a className={style.menu_item} href='#'>About</a>
-        <a className={style.menu_item} href='#'>Projects</a>
-        <a className={style.menu_item} href='#'>Contact</a>
+        <a className={style.menu_item} href='#about'>About</a>
+        <a className={style.menu_item} href='#project'>Projects</a>
+        <a className={style.menu_item} href='#contact'>Contact</a>
       </span>
     </nav>
   )  
