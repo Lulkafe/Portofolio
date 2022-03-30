@@ -5,7 +5,7 @@ export default function ProjectSection () {
 
   return (
     <div className={style.section_wrapper} id='project'>
-      <h1 className={style.header}>Projects</h1>
+      <h2 className={style.header}>Projects</h2>
       <div className={style.content_wrapper}>
         {
             projects.map((project: ProjectInfo, i) => {
