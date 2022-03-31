@@ -6,7 +6,8 @@ export default function WelcomeSection () {
     <div className={ style.section_wrapper}>
       <div className= { style.wrapper_for_anime}>
         <div className={ style.image_wrapper}>
-          <Image alt='tool image'
+          <Image 
+            alt='Tool image for greeting'
             src='/tool.png'
             height={844}
             width={832}
