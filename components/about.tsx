@@ -125,12 +125,17 @@ const SkillCertItem = () => {
       <p>Docker, Rust, Next.js</p>
       <hr className={style.divider}/>
       <h4 className={style.skill_cert_header}>📜 Certifications</h4>
-      <h5 className={style.cert_name}>Legacy Full Stack</h5>
-      <h6 className={style.cert_org_name}>freeCodeCamp</h6>
-      <h5 className={style.cert_name}>React (Basic) Certificate</h5>
-      <h6 className={style.cert_org_name}>HackerRank</h6>
-      <h5 className={style.cert_name}>Problem Solving (Basic) Certificate</h5>
-      <h6 className={style.cert_org_name}>HackerRank</h6>
+      <ul className={style.cert_list}>
+        <li><h5 className={style.cert_name}><a href='https://www.freecodecamp.org/certification/seimei/full-stack'>Legacy Full Stack</a></h5>
+      <h6 className={style.cert_org_name}>freeCodeCamp</h6></li>
+        <li><h5 className={style.cert_name}><a href='https://www.hackerrank.com/certificates/90c163c2eded'>React (Basic)</a></h5>
+      <h6 className={style.cert_org_name}>HackerRank</h6></li>
+        <li><h5 className={style.cert_name}><a href='https://www.hackerrank.com/certificates/1ac3d3d0e0aa'>Problem Solving (Basic)</a></h5>
+      <h6 className={style.cert_org_name}>HackerRank</h6></li>
+      </ul>
+      
+      
+      
     </ItemFrame>
   )
 }
@@ -148,9 +153,19 @@ const HobbyInterestItem = () => {
     <ItemFrame
       header={'Hobbies & Interests'}
       imgInfo={imgInfo}>
-      <h4>My hobbies</h4>
-      <p>I prefer</p>
-      <h4></h4>
+      <h4 className={style.hobby_item_header}>Hobbies</h4>
+      <p>I prefer workout, drawing, and learning foreign languages.
+        Currently, I study English, Spanish, Finnish and French.
+      </p>
+      <hr className={style.divider}/>
+      <h4 className={style.interest_item_header}>Interests</h4>
+      <p>I like music. Electronica, Ambient, Chillout, Drum & Bass, Heavy Metal
+         are favorite genres. Favorite Musicians/groups are, for example, Moonsorrow, Lemon Jelly,
+         Need a Name, and Devin Townsend. <br/>
+         <br/>
+         I also like to watch Youtube videos introducing culture of other countries.
+
+      </p>
     </ItemFrame>
   )
 }

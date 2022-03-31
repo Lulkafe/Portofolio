@@ -6,7 +6,7 @@ export default function Footer () {
       <section>
          <div className={style.skewed} />
       </section>
-      <div className='content_wrapper'>
+      <div className={style.content_wrapper}>
           <p>Contact: <span>seimatsusaki@gmail.com</span></p>
       </div>
     </footer>
