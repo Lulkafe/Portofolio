@@ -11,7 +11,7 @@ export default function AboutMeSection () {
          <div className={style.skewed} />
       </section>
       <div className={style.content_wrapper}>
-          <h2 className={style.section_header}>ABOUT ME</h2>
+          <h2 className={style.section_header}><span className={style.section_header_letters}>ABOUT ME</span></h2>
           <div className={style.items_wrapper}>
             <EduAndExpItem/>
             <SkillCertItem/>
@@ -133,9 +133,6 @@ const SkillCertItem = () => {
         <li><h5 className={style.cert_name}><a href='https://www.hackerrank.com/certificates/1ac3d3d0e0aa'>Problem Solving (Basic)</a></h5>
       <h6 className={style.cert_org_name}>HackerRank</h6></li>
       </ul>
-      
-      
-      
     </ItemFrame>
   )
 }
