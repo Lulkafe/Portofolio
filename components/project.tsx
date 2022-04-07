@@ -6,7 +6,7 @@ export default function ProjectSection () {
 
   return (
     <div className={style.section_wrapper} id='project'>
-      <h2 className={style.header}>PROJECTS</h2>
+      <h2 className={style.section_header}>PERSONAL PROJECTS</h2>
       <div className={style.content_wrapper}>
         {
             projects.map((project: ProjectInfo, i) => {
@@ -100,8 +100,11 @@ const CalcProject: ProjectInfo = {
     },
     description: {
       header: 'Binary Calculator',
-      main: 'A simple calculator to do binary manipulation dynamically. Made for embedded system projects (e.g. to calculate register values visually)',
-      keywords: ['React', 'Typescript', 'CSS', 'Webpack']
+      main: 'A simple calculator to do binary manipulation in a visual way. \
+             For example, instead of manually typing a value, \
+             the user directly can manipulate each bit by a click. \
+             I developed this for embedded system projects (e.g. to calculate values assigned to registers).',
+      keywords: ['React', 'Typescript', 'Webpack', 'CSS']
     },
     url: {
       website: 'https://lulkafe.github.io/BinaryCalc/',
@@ -109,6 +112,68 @@ const CalcProject: ProjectInfo = {
     }
 }
 
+const TokenizerProject: ProjectInfo = {
+   img: {
+      src: '/screenshot-CopyTokenizer.png',
+      height: 150,
+      width: 220,
+      alt: 'Screenshot of BinaryCalc app'
+    },
+    description: {
+      header: 'CopyTokenizer',
+      main: 'A web app that makes copying text easier. the app takes user text as \
+            input and generates tokens. When the user clicks one, the corresponding text is copied to clipboard.\
+            So, the user can simply copy the text by a single click.',
+      keywords: ['React', 'Typescript', 'Webpack', 'Sass']
+    },
+    url: {
+      website: 'https://lulkafe.github.io/CopyTokenizer/',
+      github: 'https://github.com/Lulkafe/CopyTokenizer'
+    }
+}
+
+const ChatAppProject: ProjectInfo = {
+   img: {
+      src: '/screenshot-ChatApp.png',
+      height: 150,
+      width: 220,
+      alt: 'Screenshot of BinaryCalc app'
+    },
+    description: {
+      header: 'S-CHAT',
+      main: 'A simple chat app that does not require registration. \
+             User conversations are kept up to only one hour. \
+             This app is designed for an occasional use. For example, when the user does not leave logs or \
+             does not want to add someone to his/her daily-use communication app as a friend but need to chat with him/her',
+      keywords: ['React', 'Typescript', 'Webpack', 'Sass', 'Socket.io', 'Node.js', 'Docker']
+    },
+    url: {
+      website: 'https://lulkafe.github.io/CopyTokenizer/',
+      github: 'https://github.com/Lulkafe/ChatApp'
+    }
+}
+
+const PortfolioProject: ProjectInfo = {
+   img: {
+      src: '/screenshot-ChatApp.png',
+      height: 150,
+      width: 220,
+      alt: 'Screenshot of my portfolio page'
+    },
+    description: {
+      header: 'My portfolio',
+      main: 'Yes, this is what you see right now. I made it from scratch. \
+             except social media icons, I designed and made everything by myself.',
+      keywords: ['React', 'Typescript', 'Next.js', 'Sass']
+    },
+    url: {
+      github: 'https://github.com/Lulkafe/ChatApp'
+    }
+}
+
 const projects: ProjectInfo[] = [
-    CalcProject
+    ChatAppProject,
+    CalcProject,
+    TokenizerProject,
+    PortfolioProject
 ]

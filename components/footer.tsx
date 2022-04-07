@@ -8,7 +8,7 @@ export default function Footer () {
       </section>
       <div className={style.content_wrapper}>
           <h3>Did you want to talk to me?</h3>
-          <p>Contact me at <span className={style.email_letters}>seimatsusaki@gmail.com</span></p>
+          <p>👉 <span className={style.email_letters}>seimatsusaki@gmail.com</span>          </p>
       </div>
     </footer>
   )

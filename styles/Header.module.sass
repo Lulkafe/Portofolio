@@ -4,6 +4,26 @@
     to
         border-bottom: 3px solid blue
 
+.hamberger_line
+    width: 50%
+    height: 2px
+    background-color: black
+
+.hamberger_menu_icon
+    display: flex
+    flex-flow: column
+    height: 50px
+    width: 50px
+    align-items: center
+    justify-content: center
+    gap: 5px
+    cursor: pointer
+    padding: 8px 0 8px 0
+
+.hamberger_menu_wrapper
+    position: relative
+    display: none
+
 .nav
     height: 55px
     margin: 0 auto
@@ -21,6 +41,31 @@
     border-bottom: 3px solid blue
     animation: highlight 1s
 
+.menu_item_mobile
+    display: block
+    width: 100vw
+    padding: 10px
+    cursor: pointer
+    text-align: right
+
+.menu_item_mobile:hover
+    color: white
+    background-color: #11429766 
+
+
+.menu_list_mobile
+    position: absolute
+    top: 100%
+    right: 8px
+    z-index: 1
+    background: rgba(255,255,255)
+    border-left: 1px solid #797979
+    border-bottom: 1px solid #797979
+    backdrop-filter: blur(2px)
+    -webkit-box-shadow: 5px 1px 46px 25px rgba(255,255,255,0.4) 
+    box-shadow: 5px 1px 46px 25px rgba(255,255,255,0.4)
+    display: none
+
 .menu_wrapper
     display: flex
     width: 30%
@@ -34,9 +79,14 @@
     padding: 8px 0 0 8px
     cursor: pointer
 
+.show
+    display: block    
+
 
 /****** FOR SMALL MOBILE DEVICES *******/
 @media only screen and (max-width: 750px)
     .menu_wrapper
         display: none
     
+    .hamberger_menu_wrapper
+        display: block
