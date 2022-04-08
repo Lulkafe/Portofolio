@@ -5,7 +5,7 @@ import { useState } from 'react'
 export default function Header () {
 
   const [showMenu, setShowMenu] = useState(true);
-  const onHambergerMenuClick = (e: any) => {
+  const onMenuClick = (e: any) => {
     e.stopPropagation();
     setShowMenu(!showMenu);
   }
@@ -29,15 +29,15 @@ export default function Header () {
 
       {/* For smartphones or small screen devices */}
       <span className={style.hamberger_menu_wrapper}>
-        <div className={style.hamberger_menu_icon} onClick={onHambergerMenuClick}>
+        <div className={style.hamberger_menu_icon} onClick={onMenuClick}>
           <span className={style.hamberger_line}></span>
           <span className={style.hamberger_line}></span>
           <span className={style.hamberger_line}></span>
         </div>
         <div className={`${style.menu_list_mobile} ${showMenu? style.show : ''}`} >
-          <a className={style.menu_item_mobile} href='#about'>About</a>
-          <a className={style.menu_item_mobile} href='#project'>Projects</a>
-          <a className={style.menu_item_mobile} href='#contact'>Contact</a>
+          <a className={style.menu_item_mobile} href='#about' onClick={onMenuClick}>About</a>
+          <a className={style.menu_item_mobile} href='#project' onClick={onMenuClick}>Projects</a>
+          <a className={style.menu_item_mobile} href='#contact' onClick={onMenuClick}>Contact</a>
         </div>
       </span>
     </nav>

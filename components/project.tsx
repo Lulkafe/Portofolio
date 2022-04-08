@@ -174,6 +174,5 @@ const PortfolioProject: ProjectInfo = {
 const projects: ProjectInfo[] = [
     ChatAppProject,
     CalcProject,
-    TokenizerProject,
-    PortfolioProject
+    TokenizerProject
 ]
