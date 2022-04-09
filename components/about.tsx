@@ -11,6 +11,7 @@ export default function AboutMeSection () {
          <div className={style.skewed} />
       </section>
       <div className={style.content_wrapper}>
+          <span className={style.circle}></span>
           <h2 className={style.section_header}><span className={style.section_header_letters}>ABOUT ME</span></h2>
           <div className={style.items_wrapper}>
             <EduAndExpItem/>

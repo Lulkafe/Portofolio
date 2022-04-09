@@ -1,3 +1,5 @@
+import React, { Dispatch } from "react"
+
 export interface ImageInfo {
   src: string,
   height: number,
@@ -16,4 +18,18 @@ export interface ProjectInfo {
     website?: string,
     github?: string
   }
+}
+
+export interface AppState {
+  isMenuClosed: boolean
+}
+
+export interface Action {
+  type: string,
+  value?: any
+}
+
+export interface Context {
+  state?: AppState,
+  dispatch?: Dispatch<Action>
 }

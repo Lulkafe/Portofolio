@@ -5,20 +5,29 @@ import WelcomeSection from '../components/welcome'
 import AboutSection from '../components/about'
 import ProjectSection from '../components/project'
 import Footer from '../components/footer'
+import { useReducer } from 'react'
+import { STATE_REDUCER, INIT_STATE, ACTION, AppContext } from '../components/reducer'
 
 const Home: NextPage = () => {
+
+  const [state, dispatch] = useReducer(STATE_REDUCER, INIT_STATE);
+  const onClick = () => {
+    dispatch({ type: ACTION.MENU.VISIBLE, value: false });
+  }
+
   return (
-    <>
-        <Head>
-          <meta name='viewport' content='width=device-width, initial-scale=1'></meta>
-          {/* <link href="https://fonts.googleapis.com/css2?family=Caveat&display=optional" rel="stylesheet"/> */}
-        </Head>
-        <Header/>
-        <WelcomeSection/>
-        <AboutSection/>
-        <ProjectSection/>
-        <Footer/>
-    </>
+    <div onClick={onClick}>
+        <AppContext.Provider value={{state, dispatch}}>
+            <Head>
+              <meta name='viewport' content='width=device-width, initial-scale=1'></meta>
+            </Head>
+            <Header/>
+            <WelcomeSection/>
+            <AboutSection/>
+            <ProjectSection/>
+            <Footer/>
+        </AppContext.Provider>
+    </div>
   )
 }
 

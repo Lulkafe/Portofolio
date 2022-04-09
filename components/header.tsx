@@ -1,13 +1,18 @@
 import style from '../styles/Header.module.sass'
 import Image from 'next/image'
-import { useState } from 'react'
+import { useState, useContext } from 'react'
+import { AppContext } from './reducer';
+import { ACTION } from './reducer';
+
 
 export default function Header () {
 
-  const [showMenu, setShowMenu] = useState(true);
+  const { state, dispatch } = useContext(AppContext)
   const onMenuClick = (e: any) => {
     e.stopPropagation();
-    setShowMenu(!showMenu);
+
+    if (dispatch)
+      dispatch({ type: ACTION.MENU.VISIBLE });
   }
 
   return (
@@ -34,7 +39,7 @@ export default function Header () {
           <span className={style.hamberger_line}></span>
           <span className={style.hamberger_line}></span>
         </div>
-        <div className={`${style.menu_list_mobile} ${showMenu? style.show : ''}`} >
+        <div className={`${style.menu_list_mobile} ${state && state.isMenuClosed? '' : style.show}`} >
           <a className={style.menu_item_mobile} href='#about' onClick={onMenuClick}>About</a>
           <a className={style.menu_item_mobile} href='#project' onClick={onMenuClick}>Projects</a>
           <a className={style.menu_item_mobile} href='#contact' onClick={onMenuClick}>Contact</a>
