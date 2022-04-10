@@ -5,8 +5,11 @@ import WelcomeSection from '../components/welcome'
 import AboutSection from '../components/about'
 import ProjectSection from '../components/project'
 import Footer from '../components/footer'
-import { useReducer } from 'react'
+import { useEffect, useReducer } from 'react'
 import { STATE_REDUCER, INIT_STATE, ACTION, AppContext } from '../components/reducer'
+import AOS  from 'aos'
+import 'aos/dist/aos.css'
+
 
 const Home: NextPage = () => {
 
@@ -14,6 +17,10 @@ const Home: NextPage = () => {
   const onClick = () => {
     dispatch({ type: ACTION.MENU.VISIBLE, value: true });
   }
+
+  useEffect(() => {
+    AOS.init();
+  }, []);
 
   return (
     <div onClick={onClick}>

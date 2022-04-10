@@ -30,7 +30,7 @@ const ProjectItem = (props: any) => {
   const demoAvailable = project.url.website !== undefined;
  
   return (
-    <div className={style.project_container}>
+    <div className={style.project_container} data-aos="fade-up"  data-aos-duration="1000">
 
       {/* Header Image */}
       <div className={style.image_wrapper}>

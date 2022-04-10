@@ -6,12 +6,20 @@
         bottom: 52%
         opacity: 1 
 
-@keyframes fade-in-msg-mobile
+@keyframes fade-in-msg-tablet
     from
         bottom: 0%
         opacity: 0
     to 
         bottom: 21%
+        opacity: 1 
+
+@keyframes fade-in-msg-mobile
+    from
+        bottom: 40%
+        opacity: 0
+    to 
+        bottom: 50%
         opacity: 1 
 
 @keyframes fade-in-img
@@ -60,11 +68,16 @@
         border-radius: 0
         width: 100%
         text-align: right
-        animation: fade-in-msg-mobile 1.5s
+        animation: fade-in-msg-tablet 1.5s
 
 @media only screen and (max-width: 610px)
     .greeting
         font-size: 49px
+        bottom: 50%
+        animation: fade-in-msg-mobile 1.5s
+
+    .section_wrapper
+        height: 100vh
 
 @media only screen and (max-width: 465px)
     .greeting

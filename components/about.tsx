@@ -11,7 +11,6 @@ export default function AboutMeSection () {
          <div className={style.skewed} />
       </section>
       <div className={style.content_wrapper}>
-          {/* <span className={style.circle}></span> */}
           <h2 className={style.section_header}><span className={style.section_header_letters}>ABOUT ME</span></h2>
           <div className={style.items_wrapper}>
             <EduAndExpItem/>
@@ -29,7 +28,7 @@ const ItemFrame = (props: any) => {
   const img: ImageInfo = props.imgInfo;
 
   return (
-    <div className={style.about_item}>
+    <div className={style.about_item} data-aos="fade-up" data-aos-duration="1000">
       <div className={style.image_wrapper}>
         <Image
           src={img.src}
