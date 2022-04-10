@@ -10,9 +10,11 @@ export const STATE_REDUCER = (state: AppState, action: Action): AppState => {
   
     switch (action.type) {
         case ACTION.MENU.VISIBLE:
-            return {
-                isMenuClosed: action.value || !state.isMenuClosed
-            }
+
+            if (action.value === undefined)
+                return { isMenuClosed : !state.isMenuClosed}
+            else
+                return { isMenuClosed: action.value }
 
         default:
             return state;

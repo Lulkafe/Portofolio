@@ -12,7 +12,7 @@ const Home: NextPage = () => {
 
   const [state, dispatch] = useReducer(STATE_REDUCER, INIT_STATE);
   const onClick = () => {
-    dispatch({ type: ACTION.MENU.VISIBLE, value: false });
+    dispatch({ type: ACTION.MENU.VISIBLE, value: true });
   }
 
   return (

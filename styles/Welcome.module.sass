@@ -1,4 +1,4 @@
-@keyframes fade-in-msg
+@keyframes fade-in-msg-desktop
     from
         bottom: 40%
         opacity: 0
@@ -6,27 +6,35 @@
         bottom: 52%
         opacity: 1 
 
-@keyframes fade-in-img
+@keyframes fade-in-msg-mobile
     from
-        bottom: -30px
+        bottom: 0%
         opacity: 0
     to 
-        bottom: 20px
+        bottom: 21%
+        opacity: 1 
+
+@keyframes fade-in-img
+    from
+        bottom: -70px
+        opacity: 0
+    to 
+        bottom: 0px
         opacity: 1 
 
 .greeting
     position: absolute
+    font-family: Arial, Helvetica, sans-serif
     font-size: 62px
     left: 59%
     bottom: 52%
-    //font-family: 'Caveat', sans-serif
     background: rgba(255,255,255,.44)
     backdrop-filter: blur(2px)
     -webkit-box-shadow: 5px 1px 46px 25px rgba(255,255,255,0.4) 
     box-shadow: 5px 1px 46px 25px rgba(255,255,255,0.4)
     border-radius: 30px
     padding: 16px
-    animation: fade-in-msg 1.5s
+    animation: fade-in-msg-desktop 1.5s
     margin-right: 10px
 
 .image_wrapper 
@@ -49,9 +57,20 @@
         border-radius: 0
         width: 100%
         text-align: right
-    
+        animation: fade-in-msg-mobile 1.5s
+
+@media only screen and (max-width: 610px)
+    .greeting
+        font-size: 49px
+
 @media only screen and (max-width: 465px)
     .greeting
         font-size: 37px
 
+@media only screen and (max-width: 360px)
+    .greeting
+        font-size: 33px
 
+@media only screen and (max-width: 320px)
+    .greeting
+        font-size: 29px

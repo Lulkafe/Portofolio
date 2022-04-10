@@ -1,6 +1,6 @@
 import style from '../styles/Header.module.sass'
 import Image from 'next/image'
-import { useState, useContext } from 'react'
+import { useContext } from 'react'
 import { AppContext } from './reducer';
 import { ACTION } from './reducer';
 
@@ -13,6 +13,7 @@ export default function Header () {
 
     if (dispatch)
       dispatch({ type: ACTION.MENU.VISIBLE });
+
   }
 
   return (
