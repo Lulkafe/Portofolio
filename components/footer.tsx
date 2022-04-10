@@ -8,12 +8,13 @@ export default function Footer () {
   const animeClass = style.appear_and_fadeout;
   const popupRef = useRef<HTMLSpanElement>(null);
   const onClickEmailAddress = (e: any) => {
-        console.log('hello')
+        console.log('clicked')
         e.stopPropagation();
         navigator.clipboard.writeText(emailAddress);
         popupRef?.current?.classList.add(animeClass);
     }
-    const onAnimetionEnd = (e: any) => {
+    const onAnimationEnd = (e: any) => {
+      console.log('end')
         e.stopPropagation();
         popupRef?.current?.classList.remove(animeClass);
     }
@@ -27,10 +28,9 @@ export default function Footer () {
         <h2 className={style.main_header}><span className={style.main_header_letter}>CONTACT</span></h2>
         <p className={style.email}>
           <span className={style.email_letters} 
-            onClick={onClickEmailAddress}
-            onAnimationEnd={onAnimetionEnd}>{emailAddress}
-            <span className={style.email_tooltip} ref={popupRef}>Copied!</span>
+            onClick={onClickEmailAddress}>{emailAddress}
           </span>
+          <span className={style.email_tooltip} onAnimationEnd={onAnimationEnd} ref={popupRef}>Copied!</span>
         </p>
       </div>
       <div className={style.image_wrapper}>

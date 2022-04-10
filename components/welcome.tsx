@@ -13,7 +13,7 @@ export default function WelcomeSection () {
             width={832}
             />
         </div>
-        <h1 className={ style.greeting}>Hello!, I&apos;m Seimei.<br/>Software Engineer.</h1>
+        <h1 className={ style.greeting}>Hello, I&apos;m Seimei.<br/>Software Engineer.</h1>
       </div>
     </div>
   )

@@ -11,7 +11,7 @@ export default function AboutMeSection () {
          <div className={style.skewed} />
       </section>
       <div className={style.content_wrapper}>
-          <span className={style.circle}></span>
+          {/* <span className={style.circle}></span> */}
           <h2 className={style.section_header}><span className={style.section_header_letters}>ABOUT ME</span></h2>
           <div className={style.items_wrapper}>
             <EduAndExpItem/>
@@ -80,10 +80,13 @@ const EduAndExpItem = () => {
       <h4 className={style.year_header}><span className={style.highlight}>2015 Jun - Aug</span></h4>
       <h5 className={style.org_name}>🇺🇸 <a href='https://www.opendns.com/'>OpenDNS</a></h5>
       <h6 className={style.title_name}>Data Visualization Engineer (intern)</h6>
+      <p>Made security data into a geographic data visualization with d3.js</p>
     
       <h4 className={style.year_header}><span className={style.highlight}>2016 Dec - Current</span></h4>
       <h5 className={style.org_name}>🇺🇸 <a href='https://www.tsg-globals.com/overview_tsgusa/index_e.html'>TSG USA</a></h5>
       <h6 className={style.title_name}>Software System Engineer</h6>
+      <p>Working for Nissan automotive embedded system SW (e.g. headunit, amplifiers)</p>
+
       <hr className={style.divider}/>
 
       {/* Volunteer Experience (Optional) */}
