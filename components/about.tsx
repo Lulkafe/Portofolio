@@ -66,38 +66,39 @@ const EduAndExpItem = () => {
       imgInfo={imgInfo}>
 
       {/* Education */}
-      <h4 className={style.year_header}><span className={style.highlight}>2008-2012</span></h4>
+      <h4 className={style.year_header}><span className={style.highlight}>Jan, 2013 - Dec, 2015</span></h4>
+      <h5 className={style.org_name}>🎓 <a href='https://www.usfca.edu/'>University of San Francisco</a></h5>
+      <h6 className={style.title_name}>Master of Science in Computer Science</h6>
+      
+      <h4 className={style.year_header}><span className={style.highlight}>Sep, 2008 - May, 2012</span></h4>
       <h5 className={style.org_name}>🎓 <a href='https://www.umfk.edu/'>University of Maine at Fort Kent</a></h5>
       <h6 className={style.title_name}>Bachelor of Science in Computer Applications</h6>
 
-      <h4 className={style.year_header}><span className={style.highlight}>2013-2015</span></h4>
-      <h5 className={style.org_name}>🎓 <a href='https://www.usfca.edu/'>University of San Francisco</a></h5>
-      <h6 className={style.title_name}>Master of Science in Computer Science</h6>
       <hr className={style.divider}/>
 
       {/* Work Experience */}
-      <h4 className={style.year_header}><span className={style.highlight}>2015 Jun - Aug</span></h4>
-      <h5 className={style.org_name}>🇺🇸 <a href='https://www.opendns.com/'>OpenDNS</a></h5>
-      <h6 className={style.title_name}>Data Visualization Engineer (intern)</h6>
-      <p>Made security data into a geographic data visualization with d3.js</p>
-    
-      <h4 className={style.year_header}><span className={style.highlight}>2016 Dec - Current</span></h4>
+      <h4 className={style.year_header}><span className={style.highlight}>Dec, 2016 - Current</span></h4>
       <h5 className={style.org_name}>🇺🇸 <a href='https://www.tsg-globals.com/overview_tsgusa/index_e.html'>TSG USA</a></h5>
       <h6 className={style.title_name}>Software System Engineer</h6>
-      <p>Working for Nissan automotive embedded system SW (e.g. headunit, amplifiers)</p>
+      <p>Work for Nissan automotive embedded system SW (e.g. headunit, amplifiers)</p>
+
+      <h4 className={style.year_header}><span className={style.highlight}>Jun - Aug, 2015</span></h4>
+      <h5 className={style.org_name}>🇺🇸 <a href='https://www.opendns.com/'>OpenDNS</a></h5>
+      <h6 className={style.title_name}>Data Visualization Engineer (intern)</h6>
+      <p>Implemented a security data visualization for a security service in Javascript</p>   
 
       <hr className={style.divider}/>
 
       {/* Volunteer Experience (Optional) */}
       <div className={`${style.volunteer_part} ${showVolExp? '' : style.hide}`}>
-        <h4 className={style.year_header}><span className={style.highlight}>2016 Jul - Oct</span></h4>
-        <h5 className={style.org_name}>🇺🇸 <a href='https://disasteraccountability.org/'>Disaster Accountability Project</a></h5>
-        <h6 className={style.title_name}>Frontend Engineer (Volunteer)</h6>
-      
         <h4 className={style.year_header}><span className={style.highlight}>2016 Jan - Dec</span></h4>
         <h5 className={style.org_name}>🇺🇸 <a href='https://www.usfca.edu/'>University of San Francisco</a></h5>
         <h6 className={style.title_name}>Software Developer (Volunteer)</h6>
 
+        <h4 className={style.year_header}><span className={style.highlight}>2016 Jul - Oct</span></h4>
+        <h5 className={style.org_name}>🇺🇸 <a href='https://disasteraccountability.org/'>Disaster Accountability Project</a></h5>
+        <h6 className={style.title_name}>Frontend Engineer (Volunteer)</h6>
+      
         <h4 className={style.year_header}><span className={style.highlight}>2016 Jul - Dec</span></h4>
         <h5 className={style.org_name}>🇺🇸 <a href='https://www.zariyaindia.org/'>Zariya</a></h5>
         <h6 className={style.title_name}>Frontend Engineer (Volunteer)</h6>

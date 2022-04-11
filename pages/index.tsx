@@ -7,7 +7,7 @@ import ProjectSection from '../components/project'
 import Footer from '../components/footer'
 import { useEffect, useReducer } from 'react'
 import { STATE_REDUCER, INIT_STATE, ACTION, AppContext } from '../components/reducer'
-import AOS  from 'aos'
+import AOS from 'aos'
 import 'aos/dist/aos.css'
 
 
