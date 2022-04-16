@@ -21,11 +21,8 @@ export default function Footer () {
 
   return (
     <footer className={style.section_wrapper} id='contact'>
-      <section>
-         <div className={style.skewed} />
-      </section>
       <div className={style.content_wrapper}>
-        <h2 className={style.main_header}><span className={style.main_header_letter}>CONTACT</span></h2>
+        {/* <h2 className={style.main_header}><span className={style.main_header_letter}>CONTACT</span></h2> */}
         <p className={style.email}>
           <span className={style.email_letters} 
             onClick={onClickEmailAddress}>{emailAddress}

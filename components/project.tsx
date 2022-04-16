@@ -5,20 +5,22 @@ import Image from 'next/image'
 export default function ProjectSection () {
 
   return (
-    <div className={style.section_wrapper} id='project'>
-      <h2 className={style.section_header}>
-        <span className={style.section_header_letters}>PERSONAL PROJECTS</span></h2>
-      <div className={style.content_wrapper}>
-        {
-            projects.map((project: ProjectInfo, i) => {
-                return (
-                    <ProjectItem 
-                        key={`project-item-${i}`} 
-                        project={project}
-                    />        
-                )
-            })
-        }
+    <div className={style.section_background}>
+      <div className={style.section_wrapper} id='project'>
+        <h2 className={style.section_header}>
+          <span className={style.section_header_letters}>PROJECTS</span></h2>
+        <div className={style.content_wrapper}>
+          {
+              projects.map((project: ProjectInfo, i) => {
+                  return (
+                      <ProjectItem 
+                          key={`project-item-${i}`} 
+                          project={project}
+                      />        
+                  )
+              })
+          }
+        </div>
       </div>
     </div>
   )
@@ -105,7 +107,7 @@ const CalcProject: ProjectInfo = {
              For example, instead of manually typing a value, \
              the user directly can manipulate each bit by a click. \
              I developed this for embedded system projects (e.g. to calculate values assigned to registers).',
-      keywords: ['React', 'Typescript', 'Webpack', 'CSS']
+      keywords: ['React', 'Typescript', 'Webpack', 'CSS', 'jest']
     },
     url: {
       website: 'https://lulkafe.github.io/BinaryCalc/',
@@ -146,7 +148,7 @@ const ChatAppProject: ProjectInfo = {
              User conversations are kept up to only one hour. \
              This app is designed for an occasional use. For example, when the user does not leave logs or \
              does not want to add someone to his/her daily-use communication app as a friend but need to chat with him/her',
-      keywords: ['React', 'Typescript', 'Webpack', 'Sass', 'Socket.io', 'Node.js', 'Docker']
+      keywords: ['React', 'Typescript', 'Webpack', 'Sass', 'Socket.io', 'Node.js', 'Express.js', 'Docker', 'jest']
     },
     url: {
       website: 'https://lulkafe.github.io/CopyTokenizer/',

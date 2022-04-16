@@ -7,9 +7,6 @@ export default function AboutMeSection () {
 
   return (
     <div className={style.section_wrapper} id='about'>
-      <section>
-         <div className={style.skewed} />
-      </section>
       <div className={style.content_wrapper}>
           <h2 className={style.section_header}><span className={style.section_header_letters}>ABOUT ME</span></h2>
           <div className={style.items_wrapper}>

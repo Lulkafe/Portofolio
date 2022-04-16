@@ -5,6 +5,7 @@ import WelcomeSection from '../components/welcome'
 import AboutSection from '../components/about'
 import ProjectSection from '../components/project'
 import Footer from '../components/footer'
+import $ from 'jquery';
 import { useEffect, useReducer } from 'react'
 import { STATE_REDUCER, INIT_STATE, ACTION, AppContext } from '../components/reducer'
 import AOS from 'aos'
@@ -28,8 +29,10 @@ const Home: NextPage = () => {
             <Head>
               <meta name='viewport' content='width=device-width, initial-scale=1'></meta>
             </Head>
-            <Header/>
-            <WelcomeSection/>
+            <div>
+              <Header/>
+              <WelcomeSection/>
+            </div>
             <AboutSection/>
             <ProjectSection/>
             <Footer/>

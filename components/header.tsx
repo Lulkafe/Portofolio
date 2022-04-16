@@ -3,17 +3,24 @@ import Image from 'next/image'
 import { useContext } from 'react'
 import { AppContext } from './reducer';
 import { ACTION } from './reducer';
+import $ from 'jquery';
 
 
 export default function Header () {
 
   const { state, dispatch } = useContext(AppContext)
-  const onMenuClick = (e: any) => {
+  const onMobileMenuClick = (e: any) => {
     e.stopPropagation();
 
     if (dispatch)
       dispatch({ type: ACTION.MENU.VISIBLE });
+  }
+  const scrollTo = (id: string) => (e: any) => {
+    e.stopPropagation();
 
+    $('html, body').animate({
+        scrollTop: $(id)?.offset()?.top
+    }, 500);
   }
 
   return (
@@ -28,22 +35,25 @@ export default function Header () {
 
       {/* For Large tablets or desktops  */}
       <span className={style.menu_wrapper}>
-        <a className={style.menu_item} href='#about'>About</a>
-        <a className={style.menu_item} href='#project'>Projects</a>
-        <a className={style.menu_item} href='#contact'>Contact</a>
+        <a className={style.menu_item} onClick={scrollTo('#about')}>About</a>
+        <a className={style.menu_item} onClick={scrollTo('#project')}>Projects</a>
+        <a className={style.menu_item} onClick={scrollTo('#contact')}>Contact</a>
       </span>
 
       {/* For smartphones or small screen devices */}
       <span className={style.hamberger_menu_wrapper}>
-        <div className={style.hamberger_menu_icon} onClick={onMenuClick}>
+        <div className={style.hamberger_menu_icon} onClick={onMobileMenuClick}>
           <span className={style.hamberger_line}></span>
           <span className={style.hamberger_line}></span>
           <span className={style.hamberger_line}></span>
         </div>
         <div className={`${style.menu_list_mobile} ${state && state.isMenuClosed? '' : style.show}`} >
-          <a className={style.menu_item_mobile} href='#about' onClick={onMenuClick}>About</a>
-          <a className={style.menu_item_mobile} href='#project' onClick={onMenuClick}>Projects</a>
-          <a className={style.menu_item_mobile} href='#contact' onClick={onMenuClick}>Contact</a>
+          <a className={style.menu_item_mobile}  
+            onClick={(e: any) => { onMobileMenuClick(e); scrollTo('#about')(e); }}>About</a>
+          <a className={style.menu_item_mobile}  
+            onClick={(e: any) => { onMobileMenuClick(e); scrollTo('#project')(e); }}>Projects</a>
+          <a className={style.menu_item_mobile}  
+            onClick={(e: any) => { onMobileMenuClick(e); scrollTo('#contact')(e); }}>Contact</a>
         </div>
       </span>
     </nav>
