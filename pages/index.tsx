@@ -5,12 +5,10 @@ import WelcomeSection from '../components/welcome'
 import AboutSection from '../components/about'
 import ProjectSection from '../components/project'
 import Footer from '../components/footer'
-import $ from 'jquery';
 import { useEffect, useReducer } from 'react'
 import { STATE_REDUCER, INIT_STATE, ACTION, AppContext } from '../components/reducer'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
-import Divider from '../components/divider'
 
 
 const Home: NextPage = () => {
