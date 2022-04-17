@@ -31,7 +31,7 @@ export default function Footer () {
       <div className={style.image_wrapper}>
         <a href='https://github.com/Lulkafe' className={style.sns_anchor}>
           <Image
-            src={'/Github-Mark-120px-plus.png'}
+            src={'/github.png'}
             width={32}
             height={32}
             alt={'Github icon'}
@@ -39,7 +39,7 @@ export default function Footer () {
         </a>
         <a href='https://www.linkedin.com/in/smatsusaki/' className={style.sns_anchor}>
           <Image
-            src={'/linkedin-icon.png'}
+            src={'/linkedin.png'}
             width={32}
             height={32}
             alt={'Linkedin icon'}
