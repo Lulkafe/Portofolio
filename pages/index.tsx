@@ -10,6 +10,7 @@ import { useEffect, useReducer } from 'react'
 import { STATE_REDUCER, INIT_STATE, ACTION, AppContext } from '../components/reducer'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
+import Divider from '../components/divider'
 
 
 const Home: NextPage = () => {
@@ -29,10 +30,8 @@ const Home: NextPage = () => {
             <Head>
               <meta name='viewport' content='width=device-width, initial-scale=1'></meta>
             </Head>
-            <div>
-              <Header/>
-              <WelcomeSection/>
-            </div>
+            <Header/>
+            <WelcomeSection/>
             <AboutSection/>
             <ProjectSection/>
             <Footer/>

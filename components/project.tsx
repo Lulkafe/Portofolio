@@ -33,7 +33,6 @@ const ProjectItem = (props: any) => {
  
   return (
     <div className={style.project_container} data-aos="fade-up"  data-aos-duration="1000">
-
       {/* Header Image */}
       <div className={style.image_wrapper}>
         <Image
@@ -51,7 +50,7 @@ const ProjectItem = (props: any) => {
       <hr className={style.divider}/>
 
       {/* Keywords (tech stack) */}
-      <h4 className={style.keywords_header}>Keywords</h4>
+      <h4 className={style.keywords_header}>Tech stack</h4>
       <div className={style.keywords_wrapper}>
         {
             project.description.keywords.map((keyword: string) => {
@@ -103,10 +102,9 @@ const CalcProject: ProjectInfo = {
     },
     description: {
       header: 'Binary Calculator',
-      main: 'A simple calculator to do binary manipulation in a visual way. \
-             For example, instead of manually typing a value, \
-             the user directly can manipulate each bit by a click. \
-             I developed this for embedded system projects (e.g. to calculate values assigned to registers).',
+      main: 'A simple calculator for binary manipulation. \
+             The user directly can manipulate each bit by a click. \
+             Developed for embedded system projects (e.g. to calculate values assigned to registers).',
       keywords: ['React', 'Typescript', 'Webpack', 'CSS', 'jest']
     },
     url: {
@@ -145,13 +143,11 @@ const ChatAppProject: ProjectInfo = {
     description: {
       header: 'S-CHAT',
       main: 'A simple chat app that does not require registration. \
-             User conversations are kept up to only one hour. \
-             This app is designed for an occasional use. For example, when the user does not leave logs or \
-             does not want to add someone to his/her daily-use communication app as a friend but need to chat with him/her',
+             The chat room lasts only for one hour, and the server does not keep the user conversation. Designed for occasional use.',
       keywords: ['React', 'Typescript', 'Webpack', 'Sass', 'Socket.io', 'Node.js', 'Express.js', 'Docker', 'jest']
     },
     url: {
-      website: 'https://lulkafe.github.io/CopyTokenizer/',
+      website: 'https://lulkafe.github.io/ChatApp',
       github: 'https://github.com/Lulkafe/ChatApp'
     }
 }

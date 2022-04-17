@@ -1,3 +1,9 @@
+@keyframes fade-in-submsg
+    from
+        opacity: 0
+    to
+        opacity: 1
+    
 @keyframes fade-in-msg-desktop
     from
         bottom: 40%
@@ -22,12 +28,12 @@
         bottom: 50%
         opacity: 1 
 
-@keyframes fade-in-img
+@keyframes fade-in-msg-mobile2
     from
-        bottom: -70px
+        bottom: -50px
         opacity: 0
     to 
-        bottom: 0px
+        bottom: 0
         opacity: 1 
 
 .greeting_container
@@ -49,14 +55,17 @@
 
 .greeting_sub
     font-size: 30px
+    animation: fade-in-submsg 4s
+    color: #4d4d4d
 
 .image_wrapper 
     position: relative
-    //animation: fade-in-img 1.5s
 
 .section_background
     background: linear-gradient(166deg, rgba(255,255,255,1) 0%, rgba(229,238,249,1) 100%)
-   
+    border-bottom-left-radius: 90% 50px
+    border-bottom-right-radius: 90% 50px
+
 .section_wrapper
     position: relative
     max-width: 1600px
@@ -84,12 +93,15 @@
     .greeting_container
         bottom: 50%
         animation: fade-in-msg-mobile 1.5s
-    
+        background: rgba(255,255,255,.57)
+        padding: 5px
+        
     .greeting_main
         font-size: 49px
 
     .section_wrapper
         height: 100vh
+
 
 @media only screen and (max-width: 465px)
     .greeting_main
@@ -97,7 +109,8 @@
     .greeting_sub
         font-size: 24px
     .greeting_container
-        background: rgba(255,255,255,.56)
+        position: relative
+        animation: fade-in-msg-mobile2 1.5s
 
 @media only screen and (max-width: 370px)
     .greeting_main

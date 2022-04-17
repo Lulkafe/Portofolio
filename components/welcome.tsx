@@ -16,7 +16,7 @@ export default function WelcomeSection () {
           </div>
           <div className={style.greeting_container}>
             <h1 className={style.greeting_main}>Hello, I&apos;m Seimei.<br/>Software Engineer.</h1>
-            <h2 className={style.greeting_sub}>From Embedded system<br/> to Web development</h2>
+            <h2 className={style.greeting_sub}>From Embedded system<br/> to Web development.</h2>
           </div >
         </div>
       </div>

@@ -63,21 +63,17 @@
     
 .section_wrapper
     width: 100%
-    //background: linear-gradient(13deg, rgba(234,234,234,1) 0%, rgba(216,216,216,1) 100%)
     background: linear-gradient(45deg, #c5dcf9 0%, rgba(216,216,216,1) 100%)
     position: relative
+    margin: 0 auto
     padding: 16px
+    border-top-left-radius: 90% 100px
+    border-top-right-radius: 90% 100px
 
 .sns_anchor
     cursor: pointer
 
-.skewed 
-  position: absolute
-  top: 0
-  left: 0
-  right: 0
-  bottom: 0
-  background: linear-gradient(13deg, rgba(234,234,234,1) 0%, rgba(216,216,216,1) 100%)
-  transform: skewY(-2deg)
-  transform-origin: top left
-  z-index: -1
+@media only screen and (max-width: 470px)
+    .section_wrapper
+        border-top-left-radius: 90% 50px
+        border-top-right-radius: 90% 50px
