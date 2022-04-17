@@ -65,6 +65,7 @@
     background: linear-gradient(166deg, rgba(255,255,255,1) 0%, rgba(229,238,249,1) 100%)
     border-bottom-left-radius: 90% 50px
     border-bottom-right-radius: 90% 50px
+    overflow: hidden
 
 .section_wrapper
     position: relative
@@ -106,14 +107,19 @@
     .section_wrapper
         height: 100vh
 
+    .image_wrapper 
+        display: none
+    
+    .section_wrapper
+        background-image: url('../image/tool.png')
+    
+
 
 @media only screen and (max-width: 465px)
     .greeting_main
         font-size: 37px
     .greeting_sub
         font-size: 24px
-    .image_wrapper 
-        opacity: 0.8
     
 
 @media only screen and (max-width: 370px)
