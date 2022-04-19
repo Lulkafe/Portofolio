@@ -81,7 +81,7 @@ const EduAndExpItem = () => {
       <h6 className={style.title_name}>Software System Engineer</h6>
       <p>Worked for Nissan automotive embedded system SW (e.g. headunit, amplifiers)</p>
 
-      <h4 className={style.year_header}><span className={style.highlight}>Jun - Aug 2015</span></h4>
+      <h4 className={style.year_header}><span className={style.highlight}>Jun 201 - Aug 2015</span></h4>
       <h5 className={style.org_name}>🇺🇸 <a href='https://www.opendns.com/'>OpenDNS</a></h5>
       <h6 className={style.title_name}>Data Visualization Engineer (intern)</h6>
       <p>Implemented a security data visualization for a security service in Javascript (d3.js)</p>   
@@ -90,15 +90,15 @@ const EduAndExpItem = () => {
 
       {/* Volunteer Experience (Optional) */}
       <div className={`${style.volunteer_part} ${showVolExp? '' : style.hide}`}>
-        <h4 className={style.year_header}><span className={style.highlight}>Jan 2016 - Dec</span></h4>
+        <h4 className={style.year_header}><span className={style.highlight}>Jan 2016 - Dec 2016</span></h4>
         <h5 className={style.org_name}>🇺🇸 <a href='https://www.usfca.edu/'>University of San Francisco</a></h5>
         <h6 className={style.title_name}>Software Developer (Volunteer)</h6>
 
-        <h4 className={style.year_header}><span className={style.highlight}>Jul 2016 - Oct</span></h4>
+        <h4 className={style.year_header}><span className={style.highlight}>Jul 2016 - Oct 2016</span></h4>
         <h5 className={style.org_name}>🇺🇸 <a href='https://disasteraccountability.org/'>Disaster Accountability Project</a></h5>
         <h6 className={style.title_name}>Frontend Engineer (Volunteer)</h6>
       
-        <h4 className={style.year_header}><span className={style.highlight}>Jul 2016 - Dec</span></h4>
+        <h4 className={style.year_header}><span className={style.highlight}>Jul 2016 - Dec 2016</span></h4>
         <h5 className={style.org_name}>🇺🇸 <a href='https://www.zariyaindia.org/'>Zariya</a></h5>
         <h6 className={style.title_name}>Frontend Engineer (Volunteer)</h6>
       </div>
