@@ -103,8 +103,8 @@ const CalcProject: ProjectInfo = {
     description: {
       header: 'Binary Calculator',
       main: 'A simple calculator for binary manipulation. \
-             The user directly can manipulate each bit by a click. \
-             Developed for embedded system projects (e.g. to calculate values assigned to registers).',
+             The user directly can manipulate each bit by a single click. \
+             Developed for embedded system projects (e.g. to calculate register values).',
       keywords: ['React', 'Typescript', 'Webpack', 'CSS', 'jest']
     },
     url: {
@@ -122,8 +122,8 @@ const TokenizerProject: ProjectInfo = {
     },
     description: {
       header: 'CopyTokenizer',
-      main: 'A web app that makes copying text easier. the app takes user text as \
-            input and generates tokens. When the user clicks one, the corresponding text is copied to clipboard.\
+      main: 'A web app that makes copying text easier. The app takes user text as \
+            input and generates clickable tokens. When the user clicks one, the corresponding text is copied to the clipboard.\
             So, the user can simply copy the text by a single click.',
       keywords: ['React', 'Typescript', 'Webpack', 'Sass']
     },
@@ -142,8 +142,8 @@ const ChatAppProject: ProjectInfo = {
     },
     description: {
       header: 'S-CHAT',
-      main: 'A simple chat app that does not require registration. \
-             The chat room lasts only for one hour, and the server does not keep the user conversation. Designed for occasional use.',
+      main: 'A simple chat app. It does not require registration. \
+             The chat room lasts only for one hour, and the server does not keep the user conversation.',
       keywords: ['React', 'Typescript', 'Webpack', 'Sass', 'Socket.io', 'Node.js', 'Express.js', 'Docker', 'jest']
     },
     url: {
